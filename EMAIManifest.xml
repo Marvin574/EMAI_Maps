@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2016 The EMAI Open Source Project
+  
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+  
+    http://www.apache.org/licenses/LICENSE-2.0
+    
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+  
+<manifest xmlns:EMAI="http://schemas.EMAI.com/apk/res/EMAI"
+    package="com.EMAI.car.mapsplaceholder">
+    <uses-sdk
+        EMAI:minSdkVersion="23"
+        EMAI:targetSdkVersion="23" />
+        
+    <application EMAI:label="@string/app_name"
+        EMAI:icon="@drawable/logo_my_maps" >
+        
+        <activity EMAI:name=".MapsPlaceholderActivity"
+            EMAI:theme="@style/CarMapsTheme"
+            EMAI:launchMode="singleTask"
+            EMAI:label="@string/app_name"
+            EMAI:resizeableActivity="true">
+            <intent-filter>
+                <action EMAI:name="EMAI.intent.action.MAIN" />
+                <category EMAI:name="EMAI.intent.category.DEFAULT"/>
+                <category EMAI:name="EMAI.intent.category.APP_MAPS" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
